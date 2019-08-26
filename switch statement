@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes 
+	
+	int n=0,m=0,d=0,w=0;
+	printf("enter n\n");
+	scanf("%d",&n);
+	
+	m=n/30;
+	d=n%30;
+	printf("no. of months:%d ",m);
+	printf("no. of days:%d ",d);
+	
+	w=d%7;
+	switch(w)
+	{
+		case 0:	printf("SUNDAY");
+		case 1:	printf("MONDAY");
+		case 2:	printf("TUESDAY");	
+		case 3:	printf("WEDNESDAY");	
+		case 4:	printf("THURSDAY");	
+		case 6:	printf("SATDAY");	
+		default:printf("invalid");
+		
+	}
+	
+	return 0;
+}
